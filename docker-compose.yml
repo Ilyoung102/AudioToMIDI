@@ -1,0 +1,18 @@
+services:
+  audio2midi-studio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: audio2midi_app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - UPLOAD_DIR=/tmp/audio2midi_uploads
+    volumes:
+      - audio_data:/tmp/audio2midi_uploads
+    restart: unless-stopped
+
+volumes:
+  audio_data:

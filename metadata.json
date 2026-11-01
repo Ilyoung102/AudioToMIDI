@@ -1,0 +1,8 @@
+{
+  "name": "Audio2MIDI Studio (오디오-MIDI 전사기)",
+  "description": "Spotify Basic Pitch 신경망 모델과 정밀 신호처리기반 MP3/WAV 오디오 to MIDI 변환 및 피아노롤 편집 워크스테이션",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
